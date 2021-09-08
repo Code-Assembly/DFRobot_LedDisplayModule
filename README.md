@@ -1,3 +1,12 @@
+# Outline
+This is a fork of the original repo at: https://github.com/DFRobot/DFRobot_LedDisplayModule
+
+There where some compatibility issues with compiling through PlatformIO for STM32 C++ environments. There are some only minor code changes to get around a handful of compile errors such as
+
+```error: invalid conversion from 'int' to 'const char*' [-fpermissive]```
+
+```ISO C++ forbids comparison between pointer and integer [-fpermissive]```
+
 # DFRobot_LedDisplayModule
 This is a 4bits / 8bits digital tube. It communicates with the host via IIC to show numbers from 0 to 9, capital letters A, B, C, D, E, F, H, L, O, P, U and dash-. <br>
 The IIC address of 4 bits digital tube in default is 0x48. <br>
